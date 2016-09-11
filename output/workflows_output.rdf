@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ada="http://geographicknowledge.de/vocab/AnalysisData.rdf#"
+   xmlns:default1="http://geographicknowledge.de/vocab/GISConcepts.rdf#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:wf="http://geographicknowledge.de/vocab/Workflow.rdf#"
+>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#Operation">
+    <rdfs:comment xml:lang="en">GIS Operations </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Fun"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">The event of applying some tool to inputs generating outputs inside a workflow</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nefee4b0f38b449eb937c4ded405926bb">
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#Beginraster"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#source"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na65e0e16f6a54313b2446839a3d3469e">
+    <rdf:rest rdf:nodeID="Naf48a239b1994c3b9709d63b3d6a44c8"/>
+    <rdf:first rdf:nodeID="N8f6f8d36cc38491c80d685af2699377e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#references">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na525e32e123e48fd9a1a3b39475345d1">
+    <rdf:first rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+    <rdf:rest rdf:nodeID="N0b669632852c4e59bdd1cc1ea33c717c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata">
+    <rdfs:comment>Whenever the input is data, and not a single value or a function</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#input"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#linkraster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#edge">
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Workflow"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>A property that links to the (reified) statements of a workflow (workflow edges). Use rdf:subject, rdf:predicate and rdf:object to further link the statement with its elements.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Erase">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#VectorTopology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncc7b587929014dd98ebde09c78e2c3c7">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Quality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1">
+    <wf:edge rdf:nodeID="N678b64c635b84a1093ee22f17f0678de"/>
+    <wf:edge rdf:nodeID="Nf8d7f92a9f344d19b4fc87b65a61cfdc"/>
+    <wf:edge rdf:nodeID="N4c428d9d615a4d56b2a7636123f37525"/>
+    <wf:edge rdf:nodeID="N360790487e8348e58c7e50402d62027a"/>
+    <wf:edge rdf:nodeID="N1e86183bf51f496da717cf95e8858906"/>
+    <wf:edge rdf:nodeID="N59d28449f9fa4dde82ba49c75d60c659"/>
+    <wf:edge rdf:nodeID="Nacb09c7576794dff9486f611a538ac6f"/>
+    <wf:edge rdf:nodeID="Nb422f7117bae4a82b86b3ce8a3043c11"/>
+    <wf:edge rdf:nodeID="Nbf130ea568cc45afa6cc2aa79838acf9"/>
+    <wf:edge rdf:nodeID="Nd9b90986fd8442c89f99c863f033ccd4"/>
+    <wf:source rdf:resource="http://geographicknowledge.de/WorkflowExamples#My_LandUse_2006"/>
+    <wf:edge rdf:nodeID="N5e14dad18c614ca6a8f11100a558561a"/>
+    <wf:edge rdf:nodeID="N96c39c42950d4bb78630f0d4e94847cb"/>
+    <wf:edge rdf:nodeID="Nb42d8014691a4217b34a13bfa4541623"/>
+    <wf:edge rdf:nodeID="Nd60a22b357a844a4a8b68326851d0a66"/>
+    <wf:edge rdf:nodeID="Nbb44c207a42b40db8e44ead7f5a6990f"/>
+    <wf:edge rdf:nodeID="Nefee4b0f38b449eb937c4ded405926bb"/>
+    <wf:edge rdf:nodeID="N8246158237a74bbdbb7b8cdaa0c2c9e0"/>
+    <wf:edge rdf:nodeID="N29975e28bac64d2b8fa53fc3b253d7c5"/>
+    <wf:result rdf:resource="http://geographicknowledge.de/WorkflowExamples#MyRoute"/>
+    <wf:edge rdf:nodeID="N754583d9ce8f4a6b8346f9543224cabf"/>
+    <wf:edge rdf:nodeID="N6125b59fef094fb78b9993581b1f4503"/>
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Workflow"/>
+    <wf:edge rdf:nodeID="N956a02a2aba14a938a08e3d3f571cc6b"/>
+    <wf:edge rdf:nodeID="N262c241baa1b43aa9b8653a7948b5815"/>
+    <wf:edge rdf:nodeID="N70116b29a1e04f1c9e20fb0657349fa5"/>
+    <wf:edge rdf:nodeID="N13efbe71ffa54e5891f3b601a235bc9b"/>
+    <wf:edge rdf:nodeID="N05df1b91ef204d6d84f0460b1a3ecea3"/>
+    <rdfs:comment xml:lang="en">Least cost path example workflow.</rdfs:comment>
+    <wf:edge rdf:nodeID="N0384cd2d1b794f75ac0ffc3b809dab0f"/>
+    <wf:edge rdf:nodeID="N36a4caac7a614a7f97babf3ccba9ea82"/>
+    <wf:edge rdf:nodeID="N9f4845d09c8c407e8452a0637b14c2ed"/>
+    <wf:edge rdf:nodeID="N278cffb4e23944d0832e79cfec6f6635"/>
+    <wf:edge rdf:nodeID="N80ccf857e993433cbc8f09903555e386"/>
+    <wf:source rdf:resource="http://geographicknowledge.de/WorkflowExamples#endpoint"/>
+    <wf:source rdf:resource="http://geographicknowledge.de/WorkflowExamples#my_BuiltUp"/>
+    <wf:edge rdf:nodeID="N3e71570383f6466f865f5504e15f3512"/>
+    <wf:source rdf:resource="http://geographicknowledge.de/WorkflowExamples#beginpoint"/>
+    <wf:edge rdf:nodeID="N8e98f25730a344629f7a162fdf29b496"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1_6">
+    <wf:output rdf:resource="http://geographicknowledge.de/WorkflowExamples#Beginraster"/>
+    <default1:inputdata rdf:resource="http://geographicknowledge.de/WorkflowExamples#beginpoint"/>
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#PointtoRaster"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f4e10e4fd374725a53423b86dd27dfe">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="N50acac25ac9540b7b80fe752f19788f5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne00aff0876f84906a5160b9763bfae3b">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#in"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nae16d7d320f84fcea04839f005cac7ff">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ObjectRS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#RegionDataSet">
+    <owl:equivalentClass rdf:nodeID="Ndaf1f2bf13504e11a75ecef7c3909a80"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05df1b91ef204d6d84f0460b1a3ecea3">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_1"/>
+    <rdf:object rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:object>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#param"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfb2f706e9e3f44c686b8c539119f5f74">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#out"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Network">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+    <owl:equivalentClass rdf:nodeID="Na653116e3ab1433c89f9f1b0a8e80c94"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb422f7117bae4a82b86b3ce8a3043c11">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_8"/>
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#toLine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">The class of symbols that refer to observable phenomena and belong to a reference system</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Resource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#out">
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Fun"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1_4">
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#PointtoRaster"/>
+    <default1:inputdata rdf:resource="http://geographicknowledge.de/WorkflowExamples#endpoint"/>
+    <wf:output rdf:resource="http://geographicknowledge.de/WorkflowExamples#endraster"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#QualityData">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Ncc7b587929014dd98ebde09c78e2c3c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0b669632852c4e59bdd1cc1ea33c717c">
+    <rdf:first rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasSupport"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Reclassify">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#LocalMapAlgebra"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#TableJoin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Table"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70116b29a1e04f1c9e20fb0657349fa5">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_6"/>
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#PointtoRaster"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7904e1244aec4c608f038ade9b6cd998">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#FieldQuality"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#output">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Clip">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#VectorTopology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#Resource">
+    <rdfs:comment>Any resource used in a workflow. May be a function or a dataset or data or a reference</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#ObjectRS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefType"/>
+    <rdfs:comment xml:lang="en">Object reference systems</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Nominal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Neighborhood">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Object"/>
+    <rdfs:comment xml:lang="en">Neighborhood of some spatial object</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N16d4c866e3f34cabb9e21bbe87cca44f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8e98f25730a344629f7a162fdf29b496">
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#CellStatistics"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf">
+    <rdfs:comment xml:lang="en">This vocabulary is a design pattern to be used for describing analysis data sets on a level that allows to make inferences about the kind of analysis applicable to the dataset</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1_3">
+    <wf:output rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route2_cost"/>
+    <default1:inputdata rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route1_cost"/>
+    <default1:inputdata rdf:resource="http://geographicknowledge.de/WorkflowExamples#my_bu_ext"/>
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#CellStatistics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#ObjectDataSet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+    <owl:equivalentClass rdf:nodeID="Nb10f0a02d16343ca81e74fbe63af75c0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N39130c3834bb4473bf12dd0756598304">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Temporal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#NetworkData">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+    <owl:equivalentClass rdf:nodeID="N91aa3a591b8040c79b087955ef5c6d65"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N262c241baa1b43aa9b8653a7948b5815">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_5"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#sink"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#endraster"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N29975e28bac64d2b8fa53fc3b253d7c5">
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#output"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_7"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#CostPat_Begi1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e71570383f6466f865f5504e15f3512">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_3"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route2_cost"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#output"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1e86183bf51f496da717cf95e8858906">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_1"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#My_bu_dist"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#output"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb10f0a02d16343ca81e74fbe63af75c0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ObjectData"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#FieldData">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N7904e1244aec4c608f038ade9b6cd998"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#zones">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#WGS84">
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpaceRS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Interval"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#EuclDistance">
+    <rdfs:comment xml:lang="en">a quality that denotes Euclidean distance to a set of objects</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Distance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#TrackData">
+    <owl:equivalentClass rdf:nodeID="N1ec79057a88b4f5bb5c9fd57ca045f74"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N70eabe13f67246749e84f553af2cb2c4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36a4caac7a614a7f97babf3ccba9ea82">
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#param"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#reclassTable"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#toLine">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#toVector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#toPolygon">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#toVector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4c428d9d615a4d56b2a7636123f37525">
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#My_bu_dist"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_2"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb44c207a42b40db8e44ead7f5a6990f">
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#CostPat_Begi1"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_8"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ec79057a88b4f5bb5c9fd57ca045f74">
+    <owl:intersectionOf rdf:nodeID="N1567fa7598754f94a760d59b989c54ea"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1_8">
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#toLine"/>
+    <wf:output rdf:resource="http://geographicknowledge.de/WorkflowExamples#MyRoute"/>
+    <default1:inputdata rdf:resource="http://geographicknowledge.de/WorkflowExamples#CostPat_Begi1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Existence">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RelQ"/>
+    <rdfs:comment xml:lang="en">A quality that denotes the existence of a set of objects in space</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc95c954ac8124acf9e142a8db96a46be">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Fun">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Resource"/>
+    <rdfs:comment xml:lang="en">The class of functions. This is a general notion for any operation in and outside a database. Has input and output.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasPart">
+    <rdfs:comment xml:lang="en">Part of relation between references.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#partOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1_5">
+    <default1:costsurface rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route2_cost"/>
+    <wf:output rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route2_backl"/>
+    <default1:sink rdf:resource="http://geographicknowledge.de/WorkflowExamples#endraster"/>
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#CostDistance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#elementOf">
+    <rdfs:comment xml:lang="en">The relation between a data item and its data set</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+    <owl:inverseOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N12aeb9db72a140c489c9a15cabf7d3e3">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#of"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#ofprop">
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#of"/>
+    <rdfs:comment>A property for propagating types in a workflow</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasOWindowPart">
+    <owl:propertyChainAxiom rdf:nodeID="N49e43b8f6f5f4360b93524bd3b050590"/>
+    <owl:propertyChainAxiom rdf:nodeID="Na525e32e123e48fd9a1a3b39475345d1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96c39c42950d4bb78630f0d4e94847cb">
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#endraster"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#output"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N525e3f082d7a4839ba5a2769added49b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nedbe2422b1a94e648d71fb22dc05e9ab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Temporal">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <owl:equivalentClass rdf:nodeID="N9552783851bc48d7864bdbc0510fbb29"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">The class of temporal referents defined in some temporal reference system</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">The class of spatial referents defined in some spatial reference system</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="N170dcbda40f14365a40228ae8bf385b9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf">
+    <rdfs:comment xml:lang="en">Basic workflow ontology for modeling derivation graphs and provenance relations in GIS</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Resource"/>
+    <owl:disjointWith rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <rdfs:comment xml:lang="en">The class of data items. Data items bind together different attributes of an observation, just like table records or primary keys.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N453e9bf0850c4bf1993a13a1b313c574"/>
+    <owl:disjointWith rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0384cd2d1b794f75ac0ffc3b809dab0f">
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_5"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#CostDistance"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80ccf857e993433cbc8f09903555e386">
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route2_backl"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#linkraster"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#FieldQuality">
+    <owl:equivalentClass rdf:nodeID="N6c5acfd42b144360ae934fa8018c0afa"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Ordinal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Nominal"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ScaleLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N278cffb4e23944d0832e79cfec6f6635">
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#EuclideanDistanceTool"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nacb09c7576794dff9486f611a538ac6f">
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_0"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#PolygontoRaster"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb42d8014691a4217b34a13bfa4541623">
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#endpoint"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#FocalMapAlgebra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RasterOp"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#TemporalData">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+    <owl:equivalentClass rdf:nodeID="N39130c3834bb4473bf12dd0756598304"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys">
+    <owl:disjointWith rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <rdfs:comment xml:lang="en">The class of reference systems</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Table">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e2bf9a6207f4c81a5e7f197db2135e3">
+    <rdf:first rdf:nodeID="Nc0ad0bed50514c7a82a52ea00b464920"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#FieldDataSet">
+    <owl:equivalentClass rdf:nodeID="N70069029c36e46068d83a7c2d962ba4b"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">The class of discrete entities (includes objects (endurants) as well as events (occurrents))</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <owl:equivalentClass rdf:nodeID="Nae16d7d320f84fcea04839f005cac7ff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#QQuality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RelQ"/>
+    <rdfs:comment xml:lang="en">A quality derived from another quality (e.g. by copying it)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na653116e3ab1433c89f9f1b0a8e80c94">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#NetworkData"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#QualityRS">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefType"/>
+    <rdfs:comment xml:lang="en">Quality reference systems</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Trajectory">
+    <rdfs:subClassOf rdf:nodeID="N12aeb9db72a140c489c9a15cabf7d3e3"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Fun"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A trajectory is a continuous function defined over time and ranging over space</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="N16c9a5ad270c40ee8d2071f68e4ba38a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8246158237a74bbdbb7b8cdaa0c2c9e0">
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#my_bu_ext"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_2"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#output"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N360790487e8348e58c7e50402d62027a">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_1"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#my_BuiltUp"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6802ae2d65124e8a8002dbc24afc4051">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Point"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N13efbe71ffa54e5891f3b601a235bc9b">
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#beginpoint"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#data1">
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+    <ada:hasMeasure rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#m1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N50acac25ac9540b7b80fe752f19788f5">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Quality"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#out"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet">
+    <owl:disjointWith rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Resource"/>
+    <rdfs:comment xml:lang="en">The class of data sets (collections of data items)</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#edgeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#edge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1_0">
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#PolygontoRaster"/>
+    <default1:inputdata rdf:resource="http://geographicknowledge.de/WorkflowExamples#My_LandUse_2006"/>
+    <wf:output rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route1_cost"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N59e5bc795a1248d282f1582b834afc22">
+    <owl:oneOf rdf:nodeID="Nb4eb0a403e4444698cc9d6844b2661b3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N89a3d288b5a543a3b54f6d15f3ffde17">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N77d6e797809f433e8ab91773e5f88f8b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N956a02a2aba14a938a08e3d3f571cc6b">
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route2_backl"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#output"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputraster">
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <owl:inverseOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#references"/>
+    <rdfs:comment xml:lang="en">The relation between a reference and its reference system. For example, a reference would be 50 and the reference system  may be Celsius</rdfs:comment>
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasOWindow">
+    <rdfs:comment xml:lang="en">The observation window of a data set. This is a (spatio-temporal) reference for which the data set represents a complete (closed world) observation (all facts that are not observed are wrong).</rdfs:comment>
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7423dd47460d480baadfd87ca3de7c0d">
+    <rdf:first rdf:nodeID="Na36e42f7fbdd46ff8108c83f98efb5af"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf313df902134ccca507acff49ee6b1f">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Temporal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#in"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf98ab0b6830945f08117f9b14a584b08">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#PointData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Density">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RelQ"/>
+    <rdfs:comment xml:lang="en">A quality that denotes the spatial density of a set of objects</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#source">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:comment>A property that links to the sources (inputs) of a workflow</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Workflow"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#m1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <ada:referencedBy rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#WGS84"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#toPoint">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#toVector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N77d6e797809f433e8ab91773e5f88f8b">
+    <rdf:first rdf:nodeID="Ne00aff0876f84906a5160b9763bfae3b"/>
+    <rdf:rest rdf:nodeID="N7423dd47460d480baadfd87ca3de7c0d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasSupport">
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The relation between a data item and its support</rdfs:comment>
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <owl:inverseOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#supportOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Path">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Object"/>
+    <rdfs:comment xml:lang="en">A single element of a spatial network denoting a spatial path from start object to end object</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#toRaster">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Conversion"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N754583d9ce8f4a6b8346f9543224cabf">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_3"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#my_bu_ext"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#JoinField">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70eabe13f67246749e84f553af2cb2c4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#of"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Trajectory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#of">
+    <rdfs:comment xml:lang="en">An overloaded property for linking resources inside a workflow back with provenance resources</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Nominal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ScaleLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N678b64c635b84a1093ee22f17f0678de">
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_0"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#My_LandUse_2006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#param">
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#input"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>input parameter</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#EuclideanDistanceTool">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasEnd">
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Path"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#PointtoRaster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#toRaster"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f6f8d36cc38491c80d685af2699377e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Temporal"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#size">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#PolygontoRaster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#toRaster"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Line">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Quality">
+    <owl:equivalentClass rdf:nodeID="Na645ae2162684005bd5811d98ff0afef"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <rdfs:comment xml:lang="en">The class of values of some quality</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#ds">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ada:hasElement rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#de"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#CostDistanceTool">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RasterOp"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#RegionData">
+    <owl:equivalentClass rdf:nodeID="N8c33ff8f18d9423391345f685bdf092e"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#LineData">
+    <owl:equivalentClass rdf:nodeID="N279203781f4141e7bed82bb32fa2dbb2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#CalculateField">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Table"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#ObjectData">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N082ba3da270a442cab7067140ded8dca"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasMeasure">
+    <owl:inverseOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#measureOf"/>
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"/>
+    <rdfs:comment xml:lang="en">The relation between a data item and its measure</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6125b59fef094fb78b9993581b1f4503">
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#output"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_0"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route1_cost"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70069029c36e46068d83a7c2d962ba4b">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#FieldData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2bec246ba40146e19f361dfb02804397">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#of"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Temporal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasMeasureRef">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:propertyChainAxiom rdf:nodeID="Ne2ed92744a6242e7859f2431c579d57a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N59d28449f9fa4dde82ba49c75d60c659">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_2"/>
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Reclassify"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#LineDataSet">
+    <owl:equivalentClass rdf:nodeID="N5ce585c78fe542c1ae487495cd660d0a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#toVector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Conversion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#ZonalMapAlgebra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9552783851bc48d7864bdbc0510fbb29">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#TimeRS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#RelQ">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Quality"/>
+    <rdfs:comment xml:lang="en">A relational quality</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1_1">
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#EuclideanDistanceTool"/>
+    <default1:param rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</default1:param>
+    <default1:inputdata rdf:resource="http://geographicknowledge.de/WorkflowExamples#my_BuiltUp"/>
+    <wf:output rdf:resource="http://geographicknowledge.de/WorkflowExamples#My_bu_dist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpaceRS">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefType"/>
+    <rdfs:comment xml:lang="en">Spatial reference systems</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#WGS84_C">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N59e5bc795a1248d282f1582b834afc22"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#line">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Line"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nedbe2422b1a94e648d71fb22dc05e9ab">
+    <rdf:first rdf:nodeID="Nbf313df902134ccca507acff49ee6b1f"/>
+    <rdf:rest rdf:nodeID="N8f4e10e4fd374725a53423b86dd27dfe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N57715338009c46399c4a772c221b3c7a"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#CostDistance">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Distance"/>
+    <rdfs:subClassOf rdf:nodeID="N8a8748fcdbb346da8ee2b323de6f2c00"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">a quality that denotes a cost distance to a set of objects defined over a cost surface</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N16d4c866e3f34cabb9e21bbe87cca44f">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#of"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N453e9bf0850c4bf1993a13a1b313c574">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#elementOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N170dcbda40f14365a40228ae8bf385b9">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpaceRS"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Region">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#TSeries">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N525e3f082d7a4839ba5a2769added49b"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Fun"/>
+    <rdfs:comment>A time series is a continuous function defined over time and ranging over quality values</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57715338009c46399c4a772c221b3c7a">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#ScaleLevel">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">These levels correspond to Stevensons scale levels and could be extended by further ones.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Cost">
+    <rdfs:comment>A quality that expresses some cost , e.g. in a cost surface</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Quality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#CellStatistics">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#LocalMapAlgebra"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N53a2556a9a234efb96bd1e943b78f3b7">
+    <rdf:first rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#LinetoRaster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#toRaster"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#source">
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd60a22b357a844a4a8b68326851d0a66">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_7"/>
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#CostPath"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#SField">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Fun"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N2bec246ba40146e19f361dfb02804397"/>
+    <rdfs:comment>A spatial field (a continuous function defined on space ranging over quality values)</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="N89a3d288b5a543a3b54f6d15f3ffde17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#Workflow">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A class for instances that denote workflows. Workflow instances should be connected to triples of the workflow, using RDF reification.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Mask">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RasterOp"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne2ed92744a6242e7859f2431c579d57a">
+    <rdf:rest rdf:nodeID="N53a2556a9a234efb96bd1e943b78f3b7"/>
+    <rdf:first rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet">
+    <owl:equivalentClass rdf:nodeID="Nc95c954ac8124acf9e142a8db96a46be"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na36e42f7fbdd46ff8108c83f98efb5af">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#out"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Quality"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndaf1f2bf13504e11a75ecef7c3909a80">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RegionData"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Raster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RegionDataSet"/>
+    <rdfs:comment>The raster data type in GIS</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#rastermask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#PointDataSet">
+    <rdfs:comment>This is a point sample of a spatial field</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="Nf98ab0b6830945f08117f9b14a584b08"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#FeatureToRaster">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#toRaster"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N279203781f4141e7bed82bb32fa2dbb2">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Line"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Intersect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#VectorTopology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#ZonalStatisticsAsTable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#ZonalMapAlgebra"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f4845d09c8c407e8452a0637b14c2ed">
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#output"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_8"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#MyRoute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Conversion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Interval">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Ordinal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ScaleLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd9b90986fd8442c89f99c863f033ccd4">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_3"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route1_cost"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#ExtractByMask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RasterOp"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#de">
+    <ada:hasMeasure rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#line"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N49e43b8f6f5f4360b93524bd3b050590">
+    <rdf:first rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasOWindow"/>
+    <rdf:rest rdf:nodeID="Nbf5d9da0bb374b918e68b2440ba09414"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#belongsTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#input">
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1_7">
+    <default1:linkraster rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route2_backl"/>
+    <wf:output rdf:resource="http://geographicknowledge.de/WorkflowExamples#CostPat_Begi1"/>
+    <default1:source rdf:resource="http://geographicknowledge.de/WorkflowExamples#Beginraster"/>
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#CostPath"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf5d9da0bb374b918e68b2440ba09414">
+    <rdf:first rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasPart"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#partOf">
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Link">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A quality that denotes a link to a neighboring region </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RelQ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#PointData">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N6802ae2d65124e8a8002dbc24afc4051"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Point">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#TemporalDataSet">
+    <owl:equivalentClass rdf:nodeID="N0c7d85c48734422289f87bde16356838"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c5acfd42b144360ae934fa8018c0afa">
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#SField"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#of"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e14dad18c614ca6a8f11100a558561a">
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_4"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#PointtoRaster"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb4eb0a403e4444698cc9d6844b2661b3">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#WGS84"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf8d7f92a9f344d19b4fc87b65a61cfdc">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_6"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#output"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#Beginraster"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#TimeRS">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Temporal reference systems</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#VectorTopology">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c7d85c48734422289f87bde16356838">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#TemporalData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf"/>
+    <owl:imports rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf"/>
+    <rdfs:comment xml:lang="en">This is an ontology of GIS concepts, including datatypes, referents and operations (functions) inside a workflow. It can be used to express Geoprocesssing workflows together with their types</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasStart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Path"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/WorkflowExamples#wf1_2">
+    <default1:inputdata rdf:resource="http://geographicknowledge.de/WorkflowExamples#My_bu_dist"/>
+    <default1:param rdf:resource="http://geographicknowledge.de/WorkflowExamples#reclassTable"/>
+    <wf:output rdf:resource="http://geographicknowledge.de/WorkflowExamples#my_bu_ext"/>
+    <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Reclassify"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naf48a239b1994c3b9709d63b3d6a44c8">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="Nfb2f706e9e3f44c686b8c539119f5f74"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefDomain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">The class of domains of reference systems. This is a class of classes of reference systems, which is not expressible in OWL, but in RDF.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a8748fcdbb346da8ee2b323de6f2c00">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Raster"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#of"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na645ae2162684005bd5811d98ff0afef">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#QualityRS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Distance">
+    <rdfs:comment xml:lang="en">a quality that denotes the spatial distance to a set of objects</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RelQ"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#costsurface">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Buffer">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#VectorTopology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#in">
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Fun"/>
+    <rdfs:comment>input of a function</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#sink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#CostPath">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RasterOp"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5ce585c78fe542c1ae487495cd660d0a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#LineData"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#result">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Workflow"/>
+    <rdfs:comment>a property that links to the result of a workflow</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8c33ff8f18d9423391345f685bdf092e">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#RasterCalculator">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#LocalMapAlgebra"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N082ba3da270a442cab7067140ded8dca">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Object"/>
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasSupport"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Ratio">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Interval"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ScaleLevel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#erasefeature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#inputdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N16c9a5ad270c40ee8d2071f68e4ba38a">
+    <owl:intersectionOf rdf:nodeID="Na65e0e16f6a54313b2446839a3d3469e"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Necb4686b8db643978927499383da3d60">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasMeasure"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Point"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#RasterOp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement">
+    <rdfs:comment xml:lang="en">the inverse of elementOf</rdfs:comment>
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1567fa7598754f94a760d59b989c54ea">
+    <rdf:rest rdf:nodeID="N2e2bf9a6207f4c81a5e7f197db2135e3"/>
+    <rdf:first rdf:nodeID="Necb4686b8db643978927499383da3d60"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Data"/>
+    <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#supportOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf130ea568cc45afa6cc2aa79838acf9">
+    <rdf:subject rdf:resource="http://geographicknowledge.de/WorkflowExamples#wf1_5"/>
+    <rdf:predicate rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#costsurface"/>
+    <rdf:object rdf:resource="http://geographicknowledge.de/WorkflowExamples#Route2_cost"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N91aa3a591b8040c79b087955ef5c6d65">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasSupport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Path"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc0ad0bed50514c7a82a52ea00b464920">
+    <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasSupport"/>
+    <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Temporal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#LocalMapAlgebra">
+    <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#RasterOp"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#measureOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>
