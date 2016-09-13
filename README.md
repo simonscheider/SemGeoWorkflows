@@ -27,4 +27,4 @@ The code is written in Python 2.7 and depends on:
 
 References
 ----------
-- Simon Scheider and Andrea Ballatore (2016): Semantic Typing of Geoprocessing Workflows (preprint, under review)
+- Simon Scheider and Andrea Ballatore (2016): Semantic Typing of Geoprocessing Workflows ([preprint](http://geographicknowledge.de/pdf/semantic-typing-geoprocessing.pdf), under review)
